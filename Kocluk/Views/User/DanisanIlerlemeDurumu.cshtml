@@ -1,0 +1,54 @@
+﻿@model Kocluk.Models.IlerlemeDurumu
+
+<div class="container mt-2">
+    <h1 class="mb-4">Kullanıcının İlerleme Durumu</h1>
+
+    @if (Model != null)
+    {
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Kilo:</strong> @Model.Kilo</p>
+                <div class="mt-4">
+                    <a href="/User/Update/Kilo" class="btn btn-primary">Kilo Güncelle</a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <p><strong>Boy:</strong> @Model.Boy</p>
+                <div class="mt-4">
+                    <a href="/User/Update/Boy" class="btn btn-primary">Boy Güncelle</a>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Vucut Yağ Oranı:</strong> @Model.VucutYagOrani</p>
+                <div class="mt-4">
+                    <a href="/User/Update/VucutYagOrani" class="btn btn-primary">Vucut Yağ Oranı Güncelle</a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <p><strong>Kas Kütlesi:</strong> @Model.KasKutlesi</p>
+                <div class="mt-4">
+                    <a href="/User/Update/KasKutlesi" class="btn btn-primary">Kas Kütlesi Güncelle</a>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Vucut Kitle İndeksi:</strong> @Model.VucutKitleIndeksi</p>
+                <div class="mt-4">
+                    <a href="/User/Update/VucutKitleIndeksi" class="btn btn-primary">Vucut Kitle İndeksi Güncelle</a>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p>Ilerleme durumu yok.</p>
+    }
+</div>
+

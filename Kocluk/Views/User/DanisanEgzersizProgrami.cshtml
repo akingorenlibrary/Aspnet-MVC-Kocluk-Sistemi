@@ -1,0 +1,72 @@
+﻿@model Kocluk.Models.DanisanEgzersizProgramiViewModel2
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Danisan Egzersiz Programi</title>
+</head>
+<body>
+    @if (Model.DanisanEgzersizProgrami != null)
+    {
+        <h2>Danisan Egzersiz Programi Detaylari</h2>
+        <div>
+            <div>
+                <strong>Egzersiz Adi:</strong>
+                <span>@Model.DanisanEgzersizProgrami.EgzersizAdi</span>
+            </div>
+
+            <div>
+                <strong>Hedefleri:</strong>
+                <span>@Model.DanisanEgzersizProgrami.Hedefleri</span>
+            </div>
+
+            <div>
+                <strong>Set Sayisi:</strong>
+                <span>@Model.DanisanEgzersizProgrami.SetSayisi</span>
+            </div>
+
+            <div>
+                <strong>Tekrar Sayisi:</strong>
+                <span>@Model.DanisanEgzersizProgrami.TekrarSayisi</span>
+            </div>
+
+            <div>
+                <strong>Video Rehberi:</strong>
+                <span>@Model.DanisanEgzersizProgrami.VideoRehberi</span>
+            </div>
+
+            <div>
+                <strong>Programin Süresi:</strong>
+                <span>@Model.DanisanEgzersizProgrami.PrograminSuresi</span>
+            </div>
+
+            <div>
+                <strong>Programa Baslama Tarihi:</strong>
+                <span>@Model.DanisanEgzersizProgrami.ProgramaBaslamaTarihi.ToString("yyyy-MM-dd HH:mm:ss")</span>
+            </div>
+
+            <div>
+                <strong>Danisan:</strong>
+                <span>@Model.DanisanEgzersizProgrami.Kullanici.Adi</span>
+            </div>
+
+            <div>
+                <strong>Antrenor:</strong>
+                <span>@Model.DanisanEgzersizProgrami.Antrenor.Adi</span>
+            </div>
+
+            <div class="mt-4">
+                <a href="/User/Antrenor/DanisanEgzersizProgramSil/@Model.DanisanId" class="btn btn-danger">Bu programı sil</a>
+            </div>
+        </div>
+
+    }
+    else
+    {
+        <p>Program bulunamadı.</p>
+        <div class="mt-4">
+            <a href="/User/Antrenor/DanisanProgramOlustur/@Model.DanisanId" class="btn btn-primary">Egzersiz Programı Oluştur</a>
+        </div>
+    }
+</body>
+</html>

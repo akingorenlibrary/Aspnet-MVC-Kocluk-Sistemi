@@ -1,0 +1,46 @@
+﻿@using Kocluk.Dto;
+@model AdminLoginRequestDto
+@{
+    ViewData["Title"] = "Admin Giriş";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row mt-5">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-4"><i class="fa-solid fa-right-to-bracket"></i> @ViewData["Title"] </h1>
+    </div>
+</div>
+
+
+@if (TempData["AdminLoginErrorMessage"] != null)
+{
+    <div class="row">
+        <div class="col-4 offset-4 mt-3">
+            <div class="alert alert-danger">
+                @TempData["AdminLoginErrorMessage"]
+            </div>
+        </div>
+    </div>
+}
+
+<div class="row">
+    <div class="col-4 offset-4 mt-3">
+        <form method="POST" asp-controller="Admin" asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger small">
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Eposta" class="form-label">Eposta</label>
+                <input asp-for="Eposta" class="form-control" placeholder="Eposta" />
+                <span asp-validation-for="Eposta" class="text-danger small"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Sifre" class="form-label">Şifre</label>
+                <input asp-for="Sifre" class="form-control" placeholder="Şifre" />
+                <span asp-validation-for="Sifre" class="text-danger small"></span>
+            </div>
+            <div class="form-group d-grid mb-3 mt-3">
+                <button type="submit" class="btn btn-primary d-block">Giriş Yap</button>
+            </div>
+        </form>
+    </div>
+</div>

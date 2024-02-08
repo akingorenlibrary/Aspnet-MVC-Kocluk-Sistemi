@@ -1,0 +1,69 @@
+﻿@using Kocluk.Dto;
+@model IlermeDurumuDto
+@{
+    ViewData["Title"] = "Ilerme Durumu";
+}
+
+
+
+@if (TempData["IlerlemeDurumuBasarili"] != null)
+{
+    <div class="row">
+        <div class="col-4 offset-4 mt-3">
+            <div class="alert alert-success">
+                @TempData["IlerlemeDurumuBasarili"]
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@if (TempData["IlerlemeDurumuHatali"] != null)
+{
+    <div class="row">
+        <div class="col-4 offset-4 mt-3">
+            <div class="alert alert-danger">
+                @TempData["IlerlemeDurumuHatali"]
+            </div>
+        </div>
+    </div>
+}
+
+
+<div class="row">
+    <div class="col-4 offset-4 mt-3">
+        <form method="POST" asp-controller="User" asp-action="IlerlemeDurumuKaydet">
+            <div asp-validation-summary="ModelOnly" class="text-danger small">
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Kilo" class="form-label">Kilo</label>
+                <input asp-for="Kilo" class="form-control" placeholder="Kilo" />
+                <span asp-validation-for="Kilo" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Boy" class="form-label">Boy</label>
+                <input asp-for="Boy" class="form-control" placeholder="Boy" />
+                <span asp-validation-for="Boy" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="VucutYagOrani" class="form-label">Vücut Yağ Oranı</label>
+                <input asp-for="VucutYagOrani" class="form-control" placeholder="Vücut Yağ Oranı" />
+                <span asp-validation-for="VucutYagOrani" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="VucutKitleIndeksi" class="form-label">Vücut Kitle Indeksi</label>
+                <input asp-for="VucutKitleIndeksi" class="form-control" placeholder="VucutKitleIndeksi" />
+                <span asp-validation-for="VucutKitleIndeksi" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group d-grid mb-3 mt-3">
+                <button type="submit" class="btn btn-primary d-block">Kaydet</button>
+            </div>
+        </form>
+    </div>
+</div>

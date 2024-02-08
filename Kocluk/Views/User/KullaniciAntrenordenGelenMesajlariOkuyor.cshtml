@@ -1,0 +1,25 @@
+﻿@model List<Mesajlar>
+
+<div class="container mt-2">
+    <div id="messageList" class="mb-4">
+        @if (Model.Any())
+        {
+            @foreach (var mesaj in Model)
+            {
+                <div class="card mb-2 @(int.Parse(User.FindFirst("Id").Value) != mesaj.Alici.Id ? "bg-secondary offset-2" : "bg-white")">
+                    <div class="card-body">
+                        <p><strong>Gönderen:</strong> @mesaj.Gonderen.Adi</p>
+                        <p><strong>Alıcı:</strong> @mesaj.Alici.Adi</p>
+                        <p><strong>Mesaj:</strong> @mesaj.Mesaj</p>
+                        <p><strong>Tarih:</strong> @mesaj.tarih.ToString("yyyy-MM-dd HH:mm:ss")</p>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>Mesaj yok</p>
+        }
+    </div>
+</div>
+

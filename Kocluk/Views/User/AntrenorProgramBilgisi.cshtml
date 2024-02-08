@@ -1,0 +1,55 @@
+﻿@model Kocluk.Dto.AntrenorProgramBilgisiViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Antrenor Program Bilgisi</title>
+</head>
+<body>
+
+    <h2>Danışan Beslenme Programı</h2>
+    @if (Model.danisanBeslenmeProgrami != null)
+    {
+        <p><strong>Hedef:</strong> @Model.danisanBeslenmeProgrami.Hedef</p>
+        <p><strong>Günlük Öğünler:</strong> @Model.danisanBeslenmeProgrami.GunlukOgunler</p>
+        <p><strong>Kalori Hedefi:</strong> @Model.danisanBeslenmeProgrami.KaloriHedefi</p>
+    }
+    else
+    {
+        <p>Danışan beslenme programı bulunamadı.</p>
+    }
+    <hr />
+    <h2>Danışan Egzersiz Programı</h2>
+    @if (Model.danisanEgzersizProgrami != null)
+    {
+        <p><strong>Egzersiz Adı:</strong> @Model.danisanEgzersizProgrami.EgzersizAdi</p>
+        <p><strong>Hedefleri:</strong> @Model.danisanEgzersizProgrami.Hedefleri</p>
+        <p><strong>Set Sayısı:</strong> @Model.danisanEgzersizProgrami.SetSayisi</p>
+        <p><strong>Tekrar Sayısı:</strong> @Model.danisanEgzersizProgrami.TekrarSayisi</p>
+        <p><strong>Video Rehberi:</strong> @Model.danisanEgzersizProgrami.VideoRehberi</p>
+        <p><strong>Programın Süresi:</strong> @Model.danisanEgzersizProgrami.PrograminSuresi</p>
+        <p><strong>Programa Başlama Tarihi:</strong> @Model.danisanEgzersizProgrami.ProgramaBaslamaTarihi.ToShortDateString()</p>
+    }
+    else
+    {
+        <p>Danışan egzersiz programı bulunamadı.</p>
+    }
+    <hr />
+    <h2>Antrenör Bilgisi</h2>
+    @if (Model.antrenor != null)
+    {
+        <p><strong>Adı:</strong> @Model.antrenor.Adi</p>
+        <p><strong>Soyadı:</strong> @Model.antrenor.Soyadi</p>
+        <p><strong>Doğum Tarihi:</strong> @Model.antrenor.DogumTarihi.ToShortDateString()</p>
+        <p><strong>Cinsiyet:</strong> @Model.antrenor.Cinsiyet</p>
+        <p><strong>Eposta:</strong> @Model.antrenor.Eposta</p>
+        <p><strong>Telefon Numarası:</strong> @Model.antrenor.TelefonNumarasi</p>
+
+    }
+    else
+    {
+        <p>Antrenör bilgisi bulunamadı.</p>
+    }
+
+</body>
+</html>

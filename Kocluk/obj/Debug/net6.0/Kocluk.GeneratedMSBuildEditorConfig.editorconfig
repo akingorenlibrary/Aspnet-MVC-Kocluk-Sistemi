@@ -1,0 +1,205 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Kocluk
+build_property.RootNamespace = Kocluk
+build_property.ProjectDir = C:\Users\Unknow\Desktop\Kocluk\Kocluk\Kocluk\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\Unknow\Desktop\Kocluk\Kocluk\Kocluk
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Admin/AddAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkQWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Admin/AddAntrenorAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkQW50cmVub3JBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Admin/Antrenorler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQW50cmVub3JsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Admin/Kullanicilar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VsbGFuaWNpbGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Login/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRm9yZ2V0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Login/ForgetPasswordSetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRm9yZ2V0UGFzc3dvcmRTZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/AntrenorAndProgram.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBbnRyZW5vckFuZFByb2dyYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/AntrenorDanisanSecMesajOku.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBbnRyZW5vckRhbmlzYW5TZWNNZXNhak9rdS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/AntrenorMesajDanisanSec.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBbnRyZW5vck1lc2FqRGFuaXNhblNlYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/AntrenorMesajGonder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBbnRyZW5vck1lc2FqR29uZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/AntrenorProgramBilgisi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBbnRyZW5vclByb2dyYW1CaWxnaXNpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/BoyGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxCb3lHdW5jZWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/DanisanBeslenmeProgrami.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEYW5pc2FuQmVzbGVubWVQcm9ncmFtaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/DanisanBeslenmeProgramOlustur.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEYW5pc2FuQmVzbGVubWVQcm9ncmFtT2x1c3R1ci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/DanisanEgzersizProgrami.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEYW5pc2FuRWd6ZXJzaXpQcm9ncmFtaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/DanisanIlerlemeDurumu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEYW5pc2FuSWxlcmxlbWVEdXJ1bXUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/Danisanlar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEYW5pc2FubGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/DanisanProgramOlustur.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEYW5pc2FuUHJvZ3JhbU9sdXN0dXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/IlerlemeDurumuEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbGVybGVtZUR1cnVtdUVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/InfoChange.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmZvQ2hhbmdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/InfoChangeForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmZvQ2hhbmdlRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/InfoChangeFormExperience.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmZvQ2hhbmdlRm9ybUV4cGVyaWVuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/InfoChangeFormName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmZvQ2hhbmdlRm9ybU5hbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/InfoChangeFormPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmZvQ2hhbmdlRm9ybVBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/InfoChangeFormProfession.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmZvQ2hhbmdlRm9ybVByb2Zlc3Npb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/InfoChangeFormSurname.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmZvQ2hhbmdlRm9ybVN1cm5hbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/InfoChangeImageForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmZvQ2hhbmdlSW1hZ2VGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/KasKutlesiGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxLYXNLdXRsZXNpR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/KiloGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxLaWxvR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/KullaniciAntrenordenGelenMesajlariOkuyor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxLdWxsYW5pY2lBbnRyZW5vcmRlbkdlbGVuTWVzYWpsYXJpT2t1eW9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/KullaniciAntrenoreMesajGonderiyor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxLdWxsYW5pY2lBbnRyZW5vcmVNZXNhakdvbmRlcml5b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/Mesajlar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNZXNhamxhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/VucutKitleIndeksiGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWdWN1dEtpdGxlSW5kZWtzaUd1bmNlbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/User/VucutYagOraniGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWdWN1dFlhZ09yYW5pR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-g0bk29fl1q
+
+[C:/Users/Unknow/Desktop/Kocluk/Kocluk/Kocluk/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-uiktroendw

@@ -1,0 +1,26 @@
+﻿<div class="container mt-3">
+    <div class="row">
+            <div class="mt-1">
+                <a href="/User/Account/InfoChange/ProfileImage" class="btn btn-primary"> Profil Fotoğrafı Güncelle</a>
+            </div>
+        <div class="mt-1">
+            <a href="/User/Account/InfoChange/Name" class="btn btn-primary"> Adı Güncelle</a>
+        </div>
+        <div class="mt-1">
+            <a href="/User/Account/InfoChange/Surname" class="btn btn-primary"> Soyadı Güncelle</a>
+        </div>
+        <div class="mt-1">
+            <a href="/User/Account/InfoChange/Password" class="btn btn-primary"> Şifre Güncelle</a>
+        </div>
+        @if (User.FindFirst("Rol").Value.Equals("antrenor"))
+        {
+            <div class="mt-1">
+                <a href="/User/Account/InfoChange/Experience" class="btn btn-primary"> Deneyim Güncelle</a>
+            </div>
+            <div class="mt-1">
+                <a href="/User/Account/InfoChange/Profession" class="btn btn-primary"> Uzmanlık Alanı Güncelle</a>
+            </div>
+        }
+        </div>
+    </div>
+</div>

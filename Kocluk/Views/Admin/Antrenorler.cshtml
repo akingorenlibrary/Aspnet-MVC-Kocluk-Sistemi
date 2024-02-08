@@ -1,0 +1,72 @@
+﻿@model List<Kullanici>
+@{
+    ViewData["Title"] = "Kullanıcılar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<a href="/Admin/Account/Antrenor/Add" class="btn btn-primary">Antrenör Ekle</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Adı</th>
+            <th>Soyadı</th>
+            <th>Doğum Tarihi</th>
+            <th>Cinsiyet</th>
+            <th>Eposta</th>
+            <th>Şifre</th>
+            <th>Telefon Numarası</th>
+            <th>Profil Fotoğrafı URL</th>
+            <th>Uzmanlık Alanları</th>
+            <th>Deneyimleri</th>
+            <th>Aktiflik Durumu</th>
+            <th>Oluşturulma Tarihi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Kullanici kullanici in Model)
+        {
+            <tr>
+                <td>@kullanici.Id</td>
+                <td>@kullanici.Adi</td>
+                <td>@kullanici.Soyadi</td>
+                <td>@kullanici.DogumTarihi.ToShortDateString()</td>
+                <td>@kullanici.Cinsiyet</td>
+                <td>@kullanici.Eposta</td>
+                <td>@kullanici.Sifre</td>
+                <td>@kullanici.TelefonNumarasi</td>
+                <td>
+                    <img src="~/images/@kullanici.ProfilFototagrafUrl" alt="Profil Fotoğrafı" width="50" height="50">
+                </td>
+                <td>-@kullanici.UzmanlikAlanlari-</td>
+                <td>@kullanici.Deneyimleri</td>
+                <td>
+                    @if (@kullanici.isActive)
+                    {
+                        <span>Aktif</span>
+                    }
+                    else
+                    {
+                        <span>Pasif</span>
+                    }
+                </td>
+
+                <td>@kullanici.CreatedAt.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                <td>
+                    <a href="/Admin/Account/Antrenor/Delete/@kullanici.Id" class="btn btn-danger" onclick="return confirm('Silmek istediğinizden emin misiniz?')">Sil</a>
+                </td>
+                <td>
+                    @if (kullanici.isActive)
+                    {
+                        <a class="btn btn-warning" href="/Admin/Account/Antrenor/ChangeActive/@kullanici.Id">Pasifleştir</a>
+                    }
+                    else
+                    {
+                        <a class="btn btn-warning" href="/Admin/Account/Antrenor/ChangeActive/@kullanici.Id">Aktifleştir</a>
+                    }
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

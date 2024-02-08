@@ -1,0 +1,45 @@
+﻿@using Kocluk.Dto;
+@model UserProfessionUpdateDto
+@{
+    ViewData["Title"] = "Güncelle";
+}
+
+@if (TempData["UpdateFormSuccessMessage"] != null)
+{
+    <div class="row">
+        <div class="col-4 offset-4 mt-3">
+            <div class="alert alert-success">
+                @TempData["UpdateFormSuccessMessage"]
+            </div>
+        </div>
+    </div>
+}
+
+@if (TempData["UpdateFormErrorMessage"] != null)
+{
+    <div class="row">
+        <div class="col-4 offset-4 mt-3">
+            <div class="alert alert-danger">
+                @TempData["UpdateFormErrorMessage"]
+            </div>
+        </div>
+    </div>
+}
+
+<div class="row">
+    <div class="col-4 offset-4 mt-3">
+        <form method="POST" asp-controller="User" asp-action="ProfileProfessionUpdate">
+            <div asp-validation-summary="ModelOnly" class="text-danger small"></div>
+
+            <div class="form-group mb-3">
+                <label asp-for="UzmanlikAlanlari" class="form-label">Deneyimleri</label>
+                <textarea asp-for="UzmanlikAlanlari" class="form-control" rows="4" placeholder="Deneyimleri"></textarea>
+                <span asp-validation-for="UzmanlikAlanlari" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group d-grid mb-3 mt-3">
+                <button type="submit" class="btn btn-primary d-block">Güncelle</button>
+            </div>
+        </form>
+    </div>
+</div>

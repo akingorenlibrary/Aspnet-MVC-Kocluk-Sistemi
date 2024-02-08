@@ -1,0 +1,39 @@
+﻿@using Kocluk.Dto;
+@model MesajDto
+@{
+    ViewData["Title"] = "Mesaj Gönder";
+}
+
+@if (TempData["MesajGonderili"] != null)
+{
+    <div class="row">
+        <div class="col-4 mt-3">
+            <div class="alert alert-success">
+                @TempData["MesajGonderili"]
+            </div>
+        </div>
+    </div>
+}
+
+@if (TempData["MesajGonderilemedi"] != null)
+{
+    <div class="row">
+        <div class="col-4 mt-3">
+            <div class="alert alert-danger">
+                @TempData["MesajGonderilemedi"]
+            </div>
+        </div>
+    </div>
+}
+
+<div class="container mt-3">
+    <h2 class="mb-3">Antrenöre Mesaj Gönder</h2>
+    <form method="POST" asp-controller="User" asp-action="KullaniciAntrenoreMesajGonderdi">
+        <div class="form-group mb-3">
+            <label asp-for="Mesaj" class="form-label">Mesaj</label>
+            <textarea asp-for="Mesaj" class="form-control" rows="4" placeholder="Mesaj"></textarea>
+            <span asp-validation-for="Mesaj" class="text-danger small"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Gönder</button>
+    </form>
+</div>

@@ -1,0 +1,72 @@
+﻿@model Kocluk.Models.DanisanEgzersizProgramiViewModel
+<div class="container mt-2">
+
+    <h2 class="mb-4">Yeni Egzersiz Programı Oluştur</h2>
+
+
+    @if (TempData["DanisanProgramOlusturBasarili"] != null)
+    {
+        <div class="row">
+            <div class="col-4 mt-3">
+                <div class="alert alert-success">
+                    @TempData["DanisanProgramOlusturBasarili"]
+                </div>
+            </div>
+        </div>
+    }
+
+
+    @if (TempData["DanisanProgramOlusturHatali"] != null)
+    {
+        <div class="row">
+            <div class="col-4 mt-3">
+                <div class="alert alert-danger">
+                    @TempData["DanisanProgramOlusturHatali"]
+                </div>
+            </div>
+        </div>
+    }
+
+    <form method="post" asp-controller="User" asp-action="DanisanEgzersizProgramiOLustur">
+
+        <div class="form-group mt-3">
+            <label for="EgzersizAdi">Egzersiz Adı:</label>
+            <input type="text" class="form-control" id="EgzersizAdi" name="DanisanEgzersizProgramiDto.EgzersizAdi" required>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="Hedefleri">Hedefleri:</label>
+            <textarea class="form-control" id="Hedefleri" name="DanisanEgzersizProgramiDto.Hedefleri" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="SetSayisi">Set Sayısı:</label>
+            <input type="number" class="form-control" id="SetSayisi" name="DanisanEgzersizProgramiDto.SetSayisi" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <input type="hidden" asp-for="DanisanId" />
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="TekrarSayisi">Tekrar Sayısı:</label>
+            <input type="number" class="form-control" id="TekrarSayisi" name="DanisanEgzersizProgramiDto.TekrarSayisi" required>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="VideoRehberi">Video Rehberi:</label>
+            <input type="text" class="form-control" id="VideoRehberi" name="DanisanEgzersizProgramiDto.VideoRehberi">
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="PrograminSuresi">Programın Süresi:</label>
+            <input type="text" class="form-control" id="PrograminSuresi" name="DanisanEgzersizProgramiDto.PrograminSuresi">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary mt-4">Oluştur</button>
+        </div>
+
+    </form>
+</div>
+

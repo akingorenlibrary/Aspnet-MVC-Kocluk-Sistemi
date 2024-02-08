@@ -1,0 +1,22 @@
+﻿
+<div class="row">
+
+    @if (User.FindFirst("Rol").Value.Equals("kullanici"))
+    {
+        <div class="col-4 offset-4 mt-3">
+            <a href="/User/KullaniciAntrenordenGelenMesajlariOkuyor" class="btn btn-primary">Antrenörden Gelen Mesajlar</a>
+        </div>
+        <div class="col-4 offset-4 mt-3">
+            <a href="/User/KullaniciAntrenoreMesajGonderiyor" class="btn btn-primary">Antrenöre Mesaj Gönder</a>
+        </div>
+    }
+    @if (User.FindFirst("Rol").Value.Equals("antrenor"))
+    {
+        <div class="col-4 offset-4 mt-3">
+            <a href="/User/AntrenorDanisanSecMesajOku" class="btn btn-primary">Danışandan Gelen Mesajlar</a>
+        </div>
+        <div class="col-4 offset-4 mt-3">
+            <a href="/User/AntrenorMesajDanisanSec" class="btn btn-primary">Danışana Mesaj Gönder</a>
+        </div>
+    }
+</div>

@@ -1,0 +1,52 @@
+﻿@model Kocluk.Models.DanisanBeslenmeProgramiViewModel2
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Danisan Beslenme Programi</title>
+</head>
+<body>
+    @if (Model.DanisanBeslenmeProgrami != null)
+    {
+        <h2>Danisan Egzersiz Programi Detaylari</h2>
+        <div>
+            <div>
+                <strong>Hedef:</strong>
+                <span>@Model.DanisanBeslenmeProgrami.Hedef</span>
+            </div>
+
+            <div>
+                <strong>Günlük Öğünler:</strong>
+                <span>@Model.DanisanBeslenmeProgrami.GunlukOgunler</span>
+            </div>
+
+            <div>
+                <strong>Kalori Hedefi:</strong>
+                <span>@Model.DanisanBeslenmeProgrami.KaloriHedefi</span>
+            </div>
+
+            <div>
+                <strong>Danisan:</strong>
+                <span>@Model.DanisanBeslenmeProgrami.Kullanici.Adi</span>
+            </div>
+
+            <div>
+                <strong>Antrenor:</strong>
+                <span>@Model.DanisanBeslenmeProgrami.Antrenor.Adi</span>
+            </div>
+
+            <div class="mt-4">
+                <a href="/User/Antrenor/DanisanBeslenmeProgramSil/@Model.DanisanId" class="btn btn-danger">Bu programı sil</a>
+            </div>
+        </div>
+
+    }
+    else
+    {
+        <p>Program bulunamadı.</p>
+        <div class="mt-4">
+            <a href="/User/Antrenor/DanisanBeslenmeProgramOlustur/@Model.DanisanId" class="btn btn-primary">Beslenme Programı Oluştur</a>
+        </div>
+    }
+</body>
+</html>

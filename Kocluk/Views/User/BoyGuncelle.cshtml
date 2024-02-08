@@ -1,0 +1,37 @@
+﻿@using Kocluk.Dto;
+@model BoyDto
+@{
+    ViewData["Title"] = "Ilerme Durumu";
+}
+
+@if (TempData["IlerlemeDurumuHatali"] != null)
+{
+    <div class="row">
+        <div class="col-4 offset-4 mt-3">
+            <div class="alert alert-danger">
+                @TempData["IlerlemeDurumuHatali"]
+            </div>
+        </div>
+    </div>
+}
+
+
+<div class="row">
+    <div class="col-4 offset-4 mt-3">
+        <h1>Boy Güncelle</h1>
+        <form method="POST" asp-controller="User" asp-action="BoyGuncelle">
+            <div asp-validation-summary="ModelOnly" class="text-danger small">
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Boy" class="form-label">Boy</label>
+                <input asp-for="Boy" class="form-control" placeholder="Boy" />
+                <span asp-validation-for="Boy" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group d-grid mb-3 mt-3">
+                <button type="submit" class="btn btn-primary d-block">Güncelle</button>
+            </div>
+        </form>
+    </div>
+</div>

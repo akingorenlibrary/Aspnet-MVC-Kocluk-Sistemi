@@ -1,0 +1,57 @@
+﻿@model Kocluk.Models.DanisanBeslenmeProgramiViewModel
+<div class="container mt-2">
+
+    <h2 class="mb-4">Yeni Beslenme Programı Oluştur</h2>
+
+
+    @if (TempData["DanisanProgramOlusturBasarili"] != null)
+    {
+        <div class="row">
+            <div class="col-4 mt-3">
+                <div class="alert alert-success">
+                    @TempData["DanisanProgramOlusturBasarili"]
+                </div>
+            </div>
+        </div>
+    }
+
+
+    @if (TempData["DanisanProgramOlusturHatali"] != null)
+    {
+        <div class="row">
+            <div class="col-4 mt-3">
+                <div class="alert alert-danger">
+                    @TempData["DanisanProgramOlusturHatali"]
+                </div>
+            </div>
+        </div>
+    }
+
+    <form method="post" asp-controller="User" asp-action="DanisanBeslenmeProgramiOLustur">
+
+        <div class="form-group mt-3">
+            <label for="EgzersizAdi">Hedef:</label>
+            <input type="text" class="form-control" id="Hedef" name="DanisanBeslenmeProgramiDto.Hedef" required>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="Hedefleri">Günluk Öğünler:</label>
+            <textarea class="form-control" id="GunlukOgunler" name="DanisanBeslenmeProgramiDto.GunlukOgunler" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="SetSayisi">Kalori Hedefi:</label>
+            <input type="text" class="form-control" id="KaloriHedefi" name="DanisanBeslenmeProgramiDto.KaloriHedefi" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <input type="hidden" asp-for="DanisanId" />
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary mt-4">Oluştur</button>
+        </div>
+
+    </form>
+</div>
+

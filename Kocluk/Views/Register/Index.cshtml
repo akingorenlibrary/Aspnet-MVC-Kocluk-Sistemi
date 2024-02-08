@@ -1,0 +1,98 @@
+﻿@using Kocluk.Dto;
+@model KullaniciRegisterDto
+@{
+    ViewData["Title"] = "Üye Ol";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-4"><i class="fa-solid fa-right-to-bracket"></i> @ViewData["Title"] </h1>
+    </div>
+</div>
+
+@if (TempData["KullaniciRegisterMessage"] != null)
+{
+    <div class="row">
+        <div class="col-4 offset-4 mt-3">
+            <div class="alert alert-danger">
+                @TempData["KullaniciRegisterMessage"]
+            </div>
+        </div>
+    </div>
+}
+
+<div class="row">
+    <div class="col-4 offset-4 mt-3">
+        <form method="POST" asp-controller="Register" asp-action="Register" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger small">
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Adi" class="form-label">Ad</label>
+                <input asp-for="Adi" class="form-control" placeholder="Ad" />
+                <span asp-validation-for="Adi" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Soyadi" class="form-label">Soyad</label>
+                <input asp-for="Soyadi" class="form-control" placeholder="Soyad" />
+                <span asp-validation-for="Soyadi" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="DogumTarihi" class="form-label">Doğum Tarihi</label>
+                <input asp-for="DogumTarihi" type="date" class="form-control" />
+                <span asp-validation-for="DogumTarihi" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Cinsiyet" class="form-label">Cinsiyet</label>
+                <select asp-for="Cinsiyet" class="form-control">
+                    <option value="E">Erkek</option>
+                    <option value="K">Kadın</option>
+                </select>
+                <span asp-validation-for="Cinsiyet" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Hedefleri" class="form-label">Hedefleri</label>
+                <textarea asp-for="Hedefleri" class="form-control" rows="4" placeholder="Hedefleri"></textarea>
+                <span asp-validation-for="Hedefleri" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="TelefonNumarasi" class="form-label">Telefon Numarası</label>
+                <input asp-for="TelefonNumarasi" class="form-control" placeholder="Telefon Numarası" />
+                <span asp-validation-for="TelefonNumarasi" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="ProfilFotografDosyasi" class="form-label">Profil Fotoğrafı Yükle</label>
+                <input asp-for="ProfilFotografDosyasi" type="file" accept="image/*" class="form-control" />
+                <span asp-validation-for="ProfilFotografDosyasi" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Eposta" class="form-label">Eposta</label>
+                <input asp-for="Eposta" class="form-control" placeholder="Eposta" />
+                <span asp-validation-for="Eposta" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="SifreSifirlamaMetni" class="form-label">Şifre Sıfırlama Metni</label>
+                <input asp-for="SifreSifirlamaMetni" class="form-control" placeholder="Şifre Sıfırlama Metni" />
+                <span asp-validation-for="SifreSifirlamaMetni" class="text-danger small"></span>
+            </div>
+
+
+            <div class="form-group mb-3">
+                <label asp-for="Sifre" class="form-label">Şifre</label>
+                <input asp-for="Sifre" class="form-control" placeholder="Şifre" />
+                <span asp-validation-for="Sifre" class="text-danger small"></span>
+            </div>
+            <div class="form-group d-grid mb-3 mt-3">
+                <button type="submit" class="btn btn-primary d-block">Üye Ol</button>
+            </div>
+        </form>
+    </div>
+</div>

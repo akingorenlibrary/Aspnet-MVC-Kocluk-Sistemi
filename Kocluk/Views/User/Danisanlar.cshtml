@@ -1,0 +1,54 @@
+﻿@model List<Kullanici>
+@{
+    ViewData["Title"] = "Kullanıcılar";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Adı</th>
+            <th>Soyadı</th>
+            <th>Doğum Tarihi</th>
+            <th>Cinsiyet</th>
+            <th>Eposta</th>
+            <th>Hedefleri</th>
+            <th>Telefon Numarası</th>
+            <th>Profil Fotoğrafı URL</th>
+            <th>Aktiflik Durumu</th>
+            <th>Oluşturulma Tarihi</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Kullanici kullanici in Model)
+        {
+            <tr>
+                <td>@kullanici.Adi</td>
+                <td>@kullanici.Soyadi</td>
+                <td>@kullanici.DogumTarihi.ToShortDateString()</td>
+                <td>@kullanici.Cinsiyet</td>
+                <td>@kullanici.Eposta</td>
+                <td>@kullanici.Hedefleri</td>
+                <td>@kullanici.TelefonNumarasi</td>
+                <td>
+                    <img src="~/images/@kullanici.ProfilFototagrafUrl" alt="Profil Fotoğrafı" width="50" height="50">
+                </td>
+                <td>
+                    @if (@kullanici.isActive)
+                    {
+                        <span>Aktif</span>
+                    }
+                    else
+                    {
+                        <span>Pasif</span>
+                    }
+                </td>
+
+                <td>@kullanici.CreatedAt.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                <td><a href="/User/Antrenor/DanisanEgzersizProgrami/@kullanici.Id" class="btn btn-primary">Egzersiz programı</a></td>
+                <td><a href="/User/Antrenor/DanisanBeslenmeProgrami/@kullanici.Id" class="btn btn-primary">Beslenme programı</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,49 @@
+﻿@model Kullanici
+@{
+    ViewData["Title"] = "Profil";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-3">
+
+            <img src="~/images/@Model.ProfilFototagrafUrl" alt="Profil Fotoğrafı" class="img-fluid">
+        </div>
+        <div class="col-md-9">
+
+            <h2>@Model.Adi @Model.Soyadi</h2>
+            <p>Email: @Model.Eposta</p>
+            <p>Doğum Tarihi: @Model.DogumTarihi.ToString("dd MMMM yyyy")</p>
+            <p>Cinsiyet: @Model.Cinsiyet</p>
+            <p>Telefon Numarası: @Model.TelefonNumarasi</p>
+
+            @if (User.FindFirst("Rol").Value.Equals("antrenor"))
+            {
+                <h3>Uzmanlık Alanları</h3>
+                <p>@Model.UzmanlikAlanlari</p>
+
+                <h3>Deneyimleri</h3>
+                <p>@Model.Deneyimleri</p>
+            }
+
+            <div class="mt-4">
+                <a href="/User/Account/InfoChange" class="btn btn-primary">Bilgileri Güncelle</a>
+            </div>
+             @if (User.FindFirst("Rol").Value.Equals("kullanici"))
+            {
+                <div class="mt-4">
+                    <a href="/User/AntrenorProgramBilgisi" class="btn btn-primary">Antrenör ve Program</a>
+            </div>
+                <div class="mt-4">
+                    <a href="/User/DanisanIlerlemeDurumu" class="btn btn-primary">İlerleme Durumum</a>
+                </div>
+            }
+             @if (User.FindFirst("Rol").Value.Equals("antrenor"))
+            {
+                <div class="mt-4">
+                    <a href="/User/Danisanlar" class="btn btn-primary">Danışanlar</a>
+            </div>
+            }
+        </div>
+    </div>
+</div>
